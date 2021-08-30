@@ -2826,7 +2826,7 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.1.1.tgz#2287cfc3dc20e5b20aeb65c2c3a56533bdca801c"
   integrity sha512-g+4pzAw7PYSjARtLBoDq6DmcblX8i9KJHSCnyM5VDDFFifUaUT9iHbFpOF/KOizQ9f7QAqU2JH3Y6aXjzUMhVA==
 
-"@vue/test-utils@^2.0.0-beta.0", "@vue/test-utils@^2.0.0-beta.3":
+"@vue/test-utils@^2.0.0-beta.3":
   version "2.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0-beta.4.tgz#7d275ca5d4e54ae32a9da4f03c1da6fdc3ce30e4"
 
@@ -4119,23 +4119,13 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001154:
-  version "1.0.30001249"
-  resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001249.tgz"
-  integrity undefined
-
-caniuse-lite@^1.0.30001125:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001154, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001243:
   version "1.0.30001249"
   resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001249.tgz"
 
 caniuse-lite@^1.0.30001135:
   version "1.0.30001135"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001135.tgz#995b1eb94404a3c9a0d7600c113c9bb27f2cd8aa"
-
-caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001243:
-  version "1.0.30001249"
-  resolved "https://registry.nlark.com/caniuse-lite/download/caniuse-lite-1.0.30001249.tgz"
-  integrity undefined
 
 capture-exit@^2.0.0:
   version "2.0.0"

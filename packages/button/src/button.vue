@@ -9,8 +9,8 @@
         'is-loading': loading,
         'is-plain': plain,
         'is-round': round,
-        'is-circle': circle
-      }
+        'is-circle': circle,
+      },
     ]"
     :disabled="buttonDisabled || loading"
     :autofocus="autofocus"
@@ -27,12 +27,14 @@
 import { computed, inject, defineComponent } from 'vue'
 import { useGlobalConfig } from '@element-plus/utils/util'
 import { isValidComponentSize } from '@element-plus/utils/validators'
-import { elFormKey, elFormItemKey } from '@element-plus/form'
+// import { elFormKey, elFormItemKey } from '@element-plus/form'
 
 import type { PropType } from 'vue'
-import type { ElFormContext, ElFormItemContext } from '@element-plus/form'
+// import type { ElFormContext, ElFormItemContext } from '@element-plus/form'
 
-type IButtonType = PropType<'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text' | 'default'>
+type IButtonType = PropType<
+  'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text' | 'default'
+>
 type IButtonNativeType = PropType<'button' | 'submit' | 'reset'>
 
 interface IButtonProps {
@@ -97,14 +99,14 @@ export default defineComponent({
   setup(props: IButtonProps, { emit }) {
     const $ELEMENT = useGlobalConfig()
 
-    const elForm = inject(elFormKey, {} as ElFormContext)
-    const elFormItem = inject(elFormItemKey, {} as ElFormItemContext)
+    // const elForm = inject(elFormKey, {} as ElFormContext)
+    // const elFormItem = inject(elFormItemKey, {} as ElFormItemContext)
 
     const buttonSize = computed(() => {
-      return props.size || elFormItem.size || $ELEMENT.size
+      return props.size || $ELEMENT.size
     })
     const buttonDisabled = computed(() => {
-      return props.disabled || elForm.disabled
+      return props.disabled
     })
 
     //methods
